@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#block-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los bloques se muevan a la siguiente línea si es necesario */
+    justify-content: center;
+    margin: 20px;
+}
+
+.block {
+    min-width: 200px;  /* Ajustar el ancho mínimo */
+    max-width: 400px;  /* Limitar el ancho máximo */
+    height: auto; /* Permitir que el bloque crezca en altura si el texto es más largo */
+    background-color: #007bff;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5; /* Ajustar el espacio entre líneas */
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: grab;
+    word-wrap: break-word; /* Permitir que el texto se ajuste dentro del bloque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#drop-zone {
+    width: 600px; /* Ajustar el ancho */
+    height: 900px; /* Aumentar la altura para más espacio */
+    border: 2px dashed #333;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#student-info {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#student-info input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#student-info label {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
